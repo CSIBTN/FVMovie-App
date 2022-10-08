@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/movieListFragment">
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.csibtn.fvmovies.ui.MovieListFragment"
+        android:label="MovieListFragment">
+        <action
+            android:id="@+id/movie_details"
+            app:destination="@id/movieDetailsFragment" />
+        <action
+            android:id="@+id/show_error"
+            app:destination="@id/errorDialogFragment" />
+        <action
+            android:id="@+id/show_currently_watched_movies"
+            app:destination="@id/currentlyWatchingFragment" />
+        <action
+            android:id="@+id/show_favourite_movies"
+            app:destination="@id/favouritesFragment" />
+        <action
+            android:id="@+id/show_finished_movies"
+            app:destination="@id/finishedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.csibtn.fvmovies.ui.MovieDetailsFragment"
+        android:label="MovieDetailsFragment">
+        <argument
+            android:name="movie"
+            app:argType="com.csibtn.fvmovies.api.Movie" />
+        <action
+            android:id="@+id/show_trailer"
+            app:destination="@id/trailerDialogFragment" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/trailerDialogFragment"
+        android:name="com.csibtn.fvmovies.ui.TrailerDialogFragment"
+        android:label="TrailerDialogFragment">
+        <argument
+            android:name="trailerUrl"
+            app:argType="string" />
+    </dialog>
+    <dialog
+        android:id="@+id/errorDialogFragment"
+        android:name="com.csibtn.fvmovies.ui.ErrorDialogFragment"
+        android:label="ErrorDialogFragment" />
+    <fragment
+        android:id="@+id/favouritesFragment"
+        android:name="com.csibtn.fvmovies.ui.FavouritesFragment"
+        android:label="FavouritesFragment">
+        <action
+            android:id="@+id/show_favourite_movies"
+            app:destination="@id/favouritesFragment" />
+        <action
+            android:id="@+id/show_currently_watched_movies"
+            app:destination="@id/currentlyWatchingFragment" />
+        <action
+            android:id="@+id/show_finished_movies"
+            app:destination="@id/finishedFragment" />
+        <action
+            android:id="@+id/show_movie_list"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/movie_details"
+            app:destination="@+id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currentlyWatchingFragment"
+        android:name="com.csibtn.fvmovies.ui.CurrentlyWatchingFragment"
+        android:label="CurrentlyWatchingFragment">
+        <action
+            android:id="@+id/show_favourite_movies"
+            app:destination="@id/favouritesFragment" />
+        <action
+            android:id="@+id/show_currently_watched_movies"
+            app:destination="@id/currentlyWatchingFragment" />
+        <action
+            android:id="@+id/show_finished_movies"
+            app:destination="@id/finishedFragment" />
+        <action
+            android:id="@+id/show_movie_list"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/movie_details"
+            app:destination="@+id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishedFragment"
+        android:name="com.csibtn.fvmovies.ui.FinishedFragment"
+        android:label="FinishedFragment">
+        <action
+            android:id="@+id/show_favourite_movies"
+            app:destination="@id/favouritesFragment" />
+        <action
+            android:id="@+id/show_currently_watched_movies"
+            app:destination="@id/currentlyWatchingFragment" />
+        <action
+            android:id="@+id/show_finished_movies"
+            app:destination="@id/finishedFragment" />
+        <action
+            android:id="@+id/show_movie_list"
+            app:destination="@id/movieListFragment" />
+        <action
+            android:id="@+id/movie_details"
+            app:destination="@+id/movieDetailsFragment" />
+    </fragment>
+</navigation>

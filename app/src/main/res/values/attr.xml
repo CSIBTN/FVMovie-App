@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Theme">
+        <attr name="progressBarPrimary" format="color" />
+        <attr name="progressBarBackground" format="color" />
+        <attr name="playButtonStroke" format="color" />
+        <attr name="headerGradientStart" format="color" />
+        <attr name="headerGradientEnd" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape android:shape="oval"
+        android:useLevel="false">
+        <solid android:color="?attr/progressBarBackground" />
+    </shape>
+</item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="10"
+            android:useLevel="false">
+            <solid android:color="#2A5329" />
+        </shape>
+    </item>
+
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="10"
+            android:useLevel="true">
+            <solid android:color="?attr/progressBarPrimary" />
+        </shape>
+    </item>
+
+</layer-list>

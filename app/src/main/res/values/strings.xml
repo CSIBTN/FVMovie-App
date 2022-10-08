@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FVMovies</string>
+    <string name="search_hint">Movie Search</string>
+    <string name="movie_item_description">Movie Poster</string>
+    <string name="user_score">User Score</string>
+    <string name="player_button">Play Trailer</string>
+    <string name="trailer_button_description">play button for the movie trailer</string>
+    <string name="overview">Overview</string>
+    <string name="release_date">Release Date</string>
+    <string name="cast">Cast</string>
+    <string name="actor_image">Actor image</string>
+    <string name="error_message">Sorry! Some error have occurred : try to check your internet connection or wait for the server to respond.</string>
+    <string name="error_ok_button">OK</string>
+    <string name="app_title">FVMovies</string>
+    <string name="splash_icon_description">logo icon for splash screen</string>
+    <string name="favourites_tab">Favourites</string>
+    <string name="currently_watching_tab">Currently watching</string>
+    <string name="finished">Finished</string>
+    <string name="header_title">FVMovies</string>
+    <string name="open_drawer">Drawer Opened</string>
+    <string name="close_drawer">Drawer Closed</string>
+    <string name="fav_movies">Your Favourite Movies</string>
+    <string name="currently_watching">Currently Watching</string>
+    <string name="finished_movies">Finished Movies</string>
+</resources>

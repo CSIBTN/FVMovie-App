@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/favourites"
+        android:icon="@drawable/star_favourites"
+        android:title="@string/favourites_tab" />
+    <item
+        android:id="@+id/currently_watching"
+        android:icon="@drawable/bookmark_currently_watching"
+        android:title="@string/currently_watching_tab" />
+    <item
+        android:id="@+id/finished"
+        android:icon="@drawable/checked_finished"
+        android:title="@string/finished" />
+
+</menu>
