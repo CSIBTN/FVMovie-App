@@ -1,10 +1,11 @@
 package com.csibtn.fvmovies.api
 
+import com.csibtn.fvmovies.BuildConfig
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
 
-private const val API_KEY = "d3e83dc1ae7c5e4f64499442c1fd723c"
+private const val API_KEY = BuildConfig.API_KEY
 
 interface MtdbAPI {
     @GET(
